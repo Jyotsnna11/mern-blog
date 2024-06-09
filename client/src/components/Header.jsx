@@ -1,7 +1,9 @@
-import { Button, Navbar, NavbarCollapse, NavbarToggle, TextInput } from "flowbite-react";
+
+import { Navbar, NavbarCollapse, NavbarToggle, TextInput } from "flowbite-react";
 import { Link,useLocation } from "react-router-dom";
 import { AiOutlineSearch } from "react-icons/ai";
 import 'flowbite/dist/flowbite.css';
+import { Button } from "flowbite-react";
 
 import { FaMoon } from "react-icons/fa"
 export default function Header() {
@@ -32,9 +34,11 @@ export default function Header() {
           <FaMoon />
         </Button>
         <Link to="/sign-in">
-          <Button className=' self-center text-white bg-gradient-to-r from-purple-500 to-blue-500 '>
-            <span className="sm:text-s px-2 py-0"> Sign In </span>
-          </Button>
+        <Button  gradientDuoTone="purpleToPink" outline>
+        Sign In
+      </Button>
+          
+          
         </Link>
         
         <NavbarToggle/>
